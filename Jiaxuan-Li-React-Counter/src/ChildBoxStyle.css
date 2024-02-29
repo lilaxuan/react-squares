@@ -1,6 +1,14 @@
 .box {
-    background-color: white;
     height: 100px;
     width: 100px;
     border: 1px solid gray;
+    transition: background-color 0.3s;
+}
+
+.white-background {
+    background-color: white;
+}
+
+.black-background {
+    background-color: black;
 }
