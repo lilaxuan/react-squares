@@ -2,7 +2,7 @@ import './ChildBoxStyle.css';
 import { useState } from 'react';
 import { useLivingCells } from './BoxesCountContext';
 
-export default function ChildBox() {
+export default function ChildBox(props) {
     // use state management for the box color
     const [backgroundColor, setBackgroundColor] = useState('white-background');
     const { livingCellsCnt, setLivingCellsCnt } = useLivingCells();
@@ -17,9 +17,12 @@ export default function ChildBox() {
         }
     }
 
+    // receive the props from the parent
+    const boxClassName = props.boxClassName;
+
     return (
         <div>
-            <div className={`box ${backgroundColor}`} onClick={changeBackgroundColor}></div>
+            <div className={`${boxClassName} ${backgroundColor}`} onClick={changeBackgroundColor}></div>
         </div>
     )
 }
