@@ -10,7 +10,7 @@ export default function ParentBoxes() {
     return (
         <LivingCellsContext.Provider value={{ livingCellsCnt, setLivingCellsCnt }}>
             <div>
-                <div>Count {livingCellsCnt}</div>
+                <div className="count-display">Count {livingCellsCnt}</div>
                 <div className="grid-container">
                     <ChildBox />
                     <ChildBox />

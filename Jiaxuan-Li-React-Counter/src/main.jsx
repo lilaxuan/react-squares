@@ -1,15 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import ChildBox from './ChildBox.jsx'
 import './index.css'
 import ParentBoxes from './ParentBoxes.jsx'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <ChildBox /> */}
     <ParentBoxes />
   </React.StrictMode>,
 )

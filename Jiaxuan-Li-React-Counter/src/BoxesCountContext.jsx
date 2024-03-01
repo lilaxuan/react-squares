@@ -8,5 +8,4 @@ export function useLivingCells() {
     return useContext(LivingCellsContext);
 }
 
-// Export LivingCellsContext
 export { LivingCellsContext };
